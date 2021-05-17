@@ -1,0 +1,635 @@
+
+
+/******************************************************
+/* General Structure */
+/******************************************************/
+
+.body {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #000;
+  font-family: Googlesansmono, sans-serif;
+ 
+}
+
+.column {
+  float: left;
+  width: 50%;
+  top: 0px;
+  min-height: 100%
+  position: -webkit-sticky;
+  position: sticky;
+  max-height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    position: static;
+
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button { 
+  background-color: rgb(0, 0, 0);
+  color: #e4e4e4;
+  border: 2px solid #e4e4e4; 
+  max-width: 25%;
+  
+  border-radius: 4%;
+  text-align: center;
+  padding: 2% 5% 2% 5%;
+}
+
+ button:hover{
+  background-color: #e4e4e4; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/******************************************************
+/* Left Column Elements */
+/******************************************************/
+
+.fui {
+  position: fixed;
+  top: 20%;
+  margin-top: -19%;
+  min-height: 70%;  
+}
+
+/* FUI */
+.text-block {
+  margin-top: 12%;
+  margin-left: 21%;
+  font-family: 'Robotomono';
+  font-weight: 700;
+  color: #e4e4e4;
+  font-size: 800%;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Finger User Interface */
+.text-block-2 {
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 22%;
+  font-family: Googlesansmono, sans-serif;
+  color: #e4e4e4;
+  font-size: 140%;
+  letter-spacing: 1px;
+}
+
+/* Tagline */
+.text-block-3 {
+  margin-top: 10%;
+  margin-left: 22%;
+  font-family: 'Googlesansmono[wght] 2', sans-serif;
+  color: #e4e4e4;
+  font-size: 98%;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.FUI-spacer  {
+  position: relative;
+  height: 55vh; 
+  min-height: 95%;
+  visibility: visible;
+}
+
+.info {
+  margin-left: 20%;
+  height: 100%;
+}
+
+.a {
+  font-family: Googlesansmono, sans-serif;
+  color: #e4e4e4;
+  font-size: 100%;
+}
+
+/******************************************************
+/* Right Column Elements */
+/******************************************************/
+
+/******************************************************/
+/* Getting Started Section */
+/******************************************************/
+
+
+/* Getting Started Text */
+.text-block-4 { 
+  max-width: 80%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-family: Googlesansmono, sans-serif;
+  color: #fff;
+  font-size: 120%;
+  line-height: 180%;
+  letter-spacing: 0vw;
+  white-space: normal;
+}
+
+.connectbutton {
+  margin-top: 10%;
+  margin-bottom: 40%;
+  border-style: solid;
+  border-width: 0.2vh;
+  border-color: #fff;
+  border-radius: 5%;
+  background-color: transparent;
+  box-shadow: 1px 1px 3px 0 #000;
+  -webkit-transform: skew(0deg, 0deg);
+  -ms-transform: skew(0deg, 0deg);
+  transform: skew(0deg, 0deg);
+  color: #fff;
+  font-size: 80%;
+}
+
+.transferedbutton {
+  border-style: solid;
+  border-width: 0.2vh;
+  border-color: #fff;
+  border-radius: 5%;
+  background-color: #fff;
+  color: #000;
+  font-size: 80%;
+}
+
+/* Progress Bar */
+
+#myProgress {
+  padding-top: 10px;
+  width: 80%;
+  visibility: hidden;
+}  
+
+#progress-text {
+  background-color: rgb(0, 0, 0);
+  color:#e4e4e4;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #77ffdd;
+  text-align: center;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.connect-spacer {
+/*  border: 1px solid white;*/
+  min-height: 35%;
+  height: 35vh;
+ 
+}
+
+/******************************************************/
+/* Play Section */
+/******************************************************/
+
+
+/* Play Text */
+.text-block-5 {
+  max-width: 80%;
+  margin-top: 10%;
+  color: #f3f3f3;
+  font-size: 120%;
+  line-height: 180%;
+}
+
+.play{
+  padding-top: 2%;
+
+}
+
+.play-spacer {
+  min-height: 35%;
+  height: 45vh;
+}
+
+/* Gesture GIFs */
+
+.w-layout-grid {
+  /* max-width: 50%; */
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.grid {
+  max-width: 80%; /* <-- changes the size of the gifs */
+  margin-top: 6%;
+  margin-bottom: 6%;
+  grid-auto-flow: row;
+  grid-column-gap: 16px;
+  grid-template-areas: "Area";
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+
+
+.image {
+  border-radius: 100%;
+}
+
+.image-2 {
+  border-radius: 100%;
+}
+
+.image-3 {
+  border-radius: 100%;
+}
+
+.image-4 {
+  border-radius: 100%;
+}
+
+.image-5 {
+  border-radius: 100%;
+}
+
+.middle-part {
+  display: inline;
+  padding-bottom: 30%;
+}
+
+/******************************************************
+/* Sketch */
+/******************************************************/
+
+.loading {
+  margin-top: 8%;
+  color: #ccc;
+}
+
+.side-gestures {
+  margin-top: 6%;
+  margin-left: 85%;
+  position: absolute;
+  max-width: 10%;  /* <-- changes the size of the gifs */
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  border-radius: 0%;
+}
+
+
+.image-6 {
+  border-radius: 100%;
+}
+
+.image-7 {
+  border-radius: 100%;
+}
+
+.image-8 {
+  border-radius: 100%;
+}
+
+.image-9 {
+  border-radius: 100%;
+}
+
+.image-10 {
+  border-radius: 100%;
+}
+
+.italic-text {
+  max-width: 80%;
+}
+
+
+/******************************************************
+/* Fonts */
+/******************************************************/
+
+
+
+#w-node-_337169d6-ed16-8524-514c-bdf18658fcf1-fe64dae6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Area;
+}
+
+@font-face {
+  font-family: 'Googlesansmono';
+  src: url('../../fonts/GoogleSansMono-Medium-2.ttf') format('truetype');
+  /* src: url('../../fonts/GoogleSansMono-Medium-2.ttf') format('truetype'); */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono[wght] 2';
+  src: url('../../fonts/GoogleSansMonowght-2.ttf') format('truetype'), url('../../fonts/GoogleSansMonowght-2.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono';
+  src: url('../../fonts/GoogleSansMono-Italic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Italicwght.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Italic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Italicwght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono';
+  src: url('../../fonts/GoogleSansMono-Regular.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono';
+  src: url('../../fonts/GoogleSansMono-MediumItalic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono';
+  src: url('../../fonts/GoogleSansMono-Bold.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono';
+  src: url('../../fonts/GoogleSansMono-BoldItalic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Googlesansmono 2';
+  src: url('../../fonts/GoogleSansMono-Medium-2.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inknutantiqua';
+  src: url('../../fonts/InknutAntiqua-ExtraBold.ttf') format('truetype'), url('../../fonts/InknutAntiqua-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inknutantiqua';
+  src: url('../../fonts/InknutAntiqua-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inknutantiqua';
+  src: url('../../fonts/InknutAntiqua-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inknutantiqua';
+  src: url('../../fonts/InknutAntiqua-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inknutantiqua';
+  src: url('../../fonts/InknutAntiqua-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inknutantiqua';
+  src: url('../../fonts/InknutAntiqua-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivonarrow';
+  src: url('../../fonts/ArchivoNarrow-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono variablefont wght';
+  src: url('../../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('../../fonts/RobotoMono-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono variablefont wght';
+  src: url('../../fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('../../fonts/Syne-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('../../fonts/Syne-Bold.ttf') format('truetype'), url('../../fonts/Syne-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('../../fonts/Syne-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne variablefont wght';
+  src: url('../../fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('../../fonts/Syne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

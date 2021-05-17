@@ -1,0 +1,124 @@
+
+<!DOCTYPE html><!-- Part of this site was created in Webflow -->
+<html lang="en" data-wf-page="608c6446df940a3afe64dae6" data-wf-site="608c6446df940a7a9d64dae5">
+<head>
+
+  <script nonce="347fj326c">
+    if (location.href.match(/.*\/view$/)) {
+      location.href += "/";
+    } 
+  </script>
+
+  <!-- IMPORT Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWBMPFFBQT"></script>
+  <script nonce="3958daj3m">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-KWBMPFFBQT', { anonymize_ip: true, referrer: document.referrer.split('?')[0] });
+  </script>
+
+  <meta charset="utf-8">
+
+  <title>FUI</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+
+  <!-- IMPORT Third Party Libraries  --> 
+  <link href="./third_party/webflow/normalize.css" rel="stylesheet" type="text/css">
+  <link href="./third_party/webflow/webflow.css?cb=114" rel="stylesheet" type="text/css">
+  <link href="./third_party/webflow/fui.webflow.css?cb=114" rel="stylesheet" type="text/css">
+
+  <!-- IMPORT P5js and Related Libs --> 
+  <script src="./third_party/p5/p5.js"></script>
+  <script src="./third_party/p5sound/p5.sound.js"></script>
+
+  <!-- IMPORT TensorFlow Lite Motion Kit -->
+  <script src="./js/tf4micro-motion-kit.js?cb=114"></script>  
+
+
+  <script type="text/javascript" nonce="3958daj3m">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+
+</head>
+  <body class="body">
+    <div class="row">
+  
+      <div class="column left-side">
+       
+        <div>
+              <div class="text-block">FUI</div>
+              <div class="text-block-3"><strong>[Finger User Interface]</strong></div>
+              <div class="text-block-2">Control your devices with the wave of a finger.</div>
+              <div class="FUI-spacer"> </div>
+              <div class="info">
+                <p style="color: #fff;"><a href="https://experiments.withgoogle.com/collection/tfliteformicrocontrollers">About</a></p>
+                <p style="color: #fff;"><a href="https://github.com/googlecreativelab/tf4micro-motion-kit/blob/main/FAQ.md">FAQ</a></p>
+              </div>
+            </div>      
+        </div>
+
+
+
+      <div class="column right-side">
+              <div class="getting-started">
+                <div class="text-block-4"><strong>Getting Started<br></strong>
+                  You need a <a href="https://tf4micro-motion-kit-dot-gweb-tf-micro-exp.uc.r.appspot.com/tf4micro-motion-kit-v005.zip">TF4Micro Motion Kit</a> pre-installed on Arduino. To confirm you're good to go, look for the red, green and blue flashing LED in the middle of the board. If you do not see this, visit <a href="https://github.com/googlecreativelab/tf4micro-motion-kit">Getting Started Guide</a>.<br>
+                <br><br><strong>Connect via Bluetooth<br></strong>The TF4Micro motion kit communicates with this website via BLE so you can have a wireless experience. Quickly tap the button on your arduino then wait for the red, green and blue LED pattern to return. <i>Warning</i>: Do not hold the button down as this will clear the board. Click the &quot;connect&quot; button below, then select &quot;TF4Micro Motion Kit&quot; from the dialogue box. <br></div>
+
+                <div id="connectButtonContainer"> 
+  <!--                 <button id="go_to_play">Scroll Test</button> -->
+                  <!-- Connect button dynamically added here via JS--> 
+                </div>
+
+                <div id= "myProgress">
+                  <p id="progress-text"> <i> Sending Tensorflow model to your arduino via Bluetooth </i></p>
+                  <p id="progress"></p>
+                  <div id="myBar"></div>
+                </div>
+            </div>
+
+            <div class="connect-spacer"></div>
+            
+            <div class="play">
+               
+                  <div class="text-block-5 Play"><b>Play</b><br>Attach the board to the back of a finger <br>(close to the tip). <br>Make sure the LED is facing you and the USB connector is towards your wrist.<br><br>There are 5 gestures: <br>Swipe left, swipe right, twirl (do so quickly!), poke, and pluck (which changes the drum loop). <br>Check out the gifs for guidance. Have fun!<br></div>
+      
+                  <div class="w-layout-grid grid"><img src="images/right.gif" loading="lazy" alt="twirl gesture" class="image-5"><img src="images/twirl.gif" loading="lazy" alt="twirl gesture" class="image-4"><img src="images/pluck.gif" loading="lazy" alt="pluck gesture" class="image-3"><img src="images/poke.gif" loading="lazy" alt="poke gesture" class="image-2"><img src="images/left.gif" loading="lazy" id="w-node-_337169d6-ed16-8524-514c-bdf18658fcf1-fe64dae6" alt="left gesture" class="image"></div>
+                  
+                  <button id="go_to_sketch" > Let's Go</button>
+            </div> 
+
+            <div class="play-spacer"></div>
+        </div>
+
+  </div>
+
+  <div class='row' id="sketch-holder">
+      <script src="./js/sketch.js?cb=114"></script>
+        <div class="side-gestures">
+          <img  src="images/left.gif" loading="lazy" alt="left gesture" class="image-6">
+          <img src="images/right.gif" loading="lazy" alt="right gesture" class="image-7">
+          <img src="images/twirl.gif" loading="lazy" alt="twirl gesture" class="image-8">
+          <img src="images/pluck.gif" loading="lazy" alt="pluck gesture" class="image-9">
+          <img src="images/poke.gif" loading="lazy" alt="poke gesture" class="image-10">
+        </div>
+  </div>
+
+  <script src="./third_party/jquery-3.5.1.min.js"></script>
+  <script src="./third_party/webflow/webflow.js" type="text/javascript"></script>
+  
+  <script
+  data-autoload-cookie-consent-bar="true"
+  data-autoload-cookie-consent-bar-intl-code=""
+  src="https://www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v3.js">
+</script>
+</body>
+</html>

@@ -284,7 +284,7 @@ button {
   margin-top: 6%;
   margin-left: 85%;
   position: absolute;
-  max-width: 10%;  /* <-- changes the size of the gifs */
+  max-width: 8%;  /* <-- changes the size of the gifs */
   grid-row-gap: 16px;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;

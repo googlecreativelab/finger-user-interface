@@ -109,7 +109,7 @@ We made these projects to work specifically with the Arduino Nano, and we curren
 
 **Where should I go from here if I want to make my own model or project?**
 You can create your own model in several different ways. Check out these links: 
-- [Experiments Collection](https://experiments.withgoogle.com/ "Experiments Collection") - Inspiration and more resources
+- [Experiments Collection](https://experiments.withgoogle.com/collection/tfliteformicrocontrollers/ "Experiments Collection") - Inspiration and more resources
 [Tiny Motion Trainer](https://experiments.withgoogle.com/tiny-motion-trainer/view "Tiny Motion Trainer") - Code-free motion trainer for microcontrollers
 - [Teachable Machine](https://teachablemachine.withgoogle.com/ "Teachable Machine") - Code-free image model trainer
 - [Tensorflow Lite for Microcontrollers](https://www.tensorflow.org/lite/microcontrollers "Tensorflow Lite for Microcontrollers") - Full documentation 

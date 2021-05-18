@@ -20,7 +20,7 @@ let y;
 let d = 0;
 let wave_text = 10;
 let sc = 0;
-let leftSound, rightSound, poke, pluck, twirl, D1, D2, D3, D4, D5;
+let leftSound, rightSound, poke, pluck, twirl, D1, D2, D3, D4;
 let drums = [];
 let gesture;
 
@@ -43,14 +43,13 @@ function preload() {
   D2 = loadSound('./sounds/D2.wav');
   D3 = loadSound('./sounds/D3.wav');
   D4 = loadSound('./sounds/D4.wav');
-  D5 = loadSound('./sounds/D5.wav');
 
 }
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("sketch-holder");
-  drums = [D1,D2,D3,D4,D5];
+  drums = [D1,D2,D3,D4];
 }
 
 function draw() {

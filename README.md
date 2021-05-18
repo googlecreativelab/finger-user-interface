@@ -3,18 +3,18 @@
 #### [Finger User Interface]
 ### Control your devices with the wave of a finger.
 
-#### Overview
+### Overview
 
 Since 2009, coders have created thousands of experiments using Chrome, Android, AI, WebVR, AR and more. We showcase these projects and a variety of helpful tools and resources to inspire a diverse community of makers to explore, create, and share what’s possible with these technologies.
 
-**FUI (Finger User Interface)** is a part of the TensorFlow Microcontroller Experiments, a collection of open source, interactive projects designed to demonstrate some fun ways to combine Arduino and TensorFlow Lite for Microcontrollers. 
+**FUI (Finger User Interface)** is a part of the TensorFlow Lite for Microcontroller Experiments, a collection of open source, interactive projects designed to demonstrate some fun ways to combine Arduino and TensorFlow Lite for Microcontrollers. 
 
 These projects were built with the 
 [Arduino Sense 33 BLE](https://store.arduino.cc/usa/nano-33-ble-sense "Arduino Store"), [TensorFlow Lite for Microcontrollers](https://www.tensorflow.org/lite/microcontrollers "TFL4M"), standard web technologies ( HTML, CSS & Javascript ) and [p5.js](https://p5js.org/ "p5js").
 
 ----
 
-#### Experiment Description
+### Experiment Description
 [Finger User Interface](https://experiments.withgoogle.com/finger-user-interface "FUI Google Experiment") or FUI (pronounced Foo-ey) lets you control connected devices with the wave of a finger.
 
 Other experiments to explore:
@@ -24,10 +24,10 @@ Other experiments to explore:
 
 ----
 
-#### Tools
+### Tools
 
 - Linux, MacOS or Windows computer with [Chrome](https://www.google.com/chrome/?brand=WHAR&geo=US&gclid=Cj0KCQjw9_mDBhCGARIsAN3PaFNRBCVUxmhR1QPA2LHaoELEr9yc1KkSNQ-Jc9KVZd8Sq2ux5gR6mJsaAm_6EALw_wcB&gclsrc=aw.ds "Chrome") installed
-- TensorFlow Microcontroller Challenge Kit by SparkFun or [Arduino Nano BLE Sense 33](https://store.arduino.cc/usa/nano-33-ble-sense "Arduino Nano")
+- TensorFlow Microcontroller Kit by SparkFun or [Arduino Nano BLE Sense 33](https://store.arduino.cc/usa/nano-33-ble-sense "Arduino Nano")
 - [Micro USB](https://www.google.com/search?rlz=1C5CHFA_enUS858US858&sxsrf=ALeKk01CbJTvQbYgX6arJbsjcRVmv-3-RQ:1584929968297&q=Micro+USB+cable&spell=1&sa=X&ved=2ahUKEwjl8IOexK_oAhXDqZ4KHZ0mCmcQBSgAegQIDhAn&biw=1680&bih=832 "Micro USB") cable (If you're on a USB-C laptop, instead get a [USB-C to Micro USB](https://www.google.com/search?&q=USB-C+to+Micro+USB+cable "USB-C to Micro USB") cable)
 - Rubberband
 - [Optional] Battery
@@ -76,19 +76,19 @@ Flashing: Using the Arduino Nano Sense 33 BLE
 
 ----
 
-#### Using the TensorFlow Microcontroller Kit by SparkFun
+### Using the TensorFlow Microcontroller Kit by SparkFun
  
-The board that comes with the TensorFlow Microcontroller Challenge Kit by SparkFun comes preflashed with a sketch that will work with some of the experiments right out of the box. If you are using one of the “TensorFlow Micro Challenge” kits and you just want to jump right into playing with the experiments then you can simply connect your arduino to a power source (USB or Battery) and connect to one of the following experiment URLs:
+The board that comes with the TensorFlow Microcontroller Kit by SparkFun comes preflashed with a sketch that will work with some of the experiments right out of the box. If you are using one of the “TensorFlow Micro” kits and you just want to jump right into playing with the experiments then you can simply connect your arduino to a power source (USB or Battery) and connect to one of the following experiment URLs:
 - [Air Snare](https://experiments.withgoogle.com/air-snare/view "Air Snare")
 - [Finger User Interface (FUI)](https://experiments.withgoogle.com/finger-user-interface/view "FUI")
 - [Tiny Motion Trainer](https://experiments.withgoogle.com/tiny-motion-trainer/view "Tiny Motion Trainer")
 
 ----
 
-#### FAQ & Common Errors
+### FAQ & Common Errors
 
 **What exactly is being transferred when I “connect”?**<br/>
-When you’re connecting the board to your computer, a pre-trained TensorFlow Lite machine learning model gets transferred over BLE onto the device. The sketches that are uploaded to the Arduino include a common TensorFlow Lite for Microcontrollers model architecture. The different experiment websites change the behavior of the sketch by changing the model to one specifically made for the experience. 
+When you’re connecting the board to your computer, a pre-trained TensorFlow Lite machine learning model gets transferred over BLE onto the device. The sketches that are uploaded to the Arduino include a common TensorFlow Lite for Microcontrollers Experiments model architecture. The different experiment websites change the behavior of the sketch by changing the model to one specifically made for the experience. 
 
 
 **What if I’m having issues connecting via bluetooth?**<br/>
@@ -125,7 +125,7 @@ Post-training quantization is a conversion technique that can reduce model size 
 
 ----
 
-#### Note
+### Note
 
 This is not an official Google product, but a collection of experiments that were developed at the Google Creative Lab. This is not a library or code repository that intends to evolve. Instead, it is a snapshot alluding to what’s possible at this moment in time.
 

@@ -22,7 +22,7 @@
 
   <meta charset="utf-8">
   <meta name="twitter:title" content="FUI - Finger User Interface">
-  <meta property="og:image" content="https://https://experiments.withgoogle.com/finger-user-interface/view/images/FUI_16x9.gif">
+  <meta property="og:image" content="https://experiments.withgoogle.com/finger-user-interface/view/images/FUI_16x9.gif">
 
   <title>FUI</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -30,15 +30,15 @@
 
   <!-- IMPORT Third Party Libraries  --> 
   <link href="./third_party/webflow/normalize.css" rel="stylesheet" type="text/css">
-  <link href="./third_party/webflow/webflow.css?cb=116" rel="stylesheet" type="text/css">
-  <link href="./third_party/webflow/fui.webflow.css?cb=116" rel="stylesheet" type="text/css">
+  <link href="./third_party/webflow/webflow.css?cb=117" rel="stylesheet" type="text/css">
+  <link href="./third_party/webflow/fui.webflow.css?cb=117" rel="stylesheet" type="text/css">
 
   <!-- IMPORT P5js and Related Libs --> 
   <script src="./third_party/p5/p5.js"></script>
   <script src="./third_party/p5sound/p5.sound.js"></script>
 
   <!-- IMPORT TensorFlow Lite Motion Kit -->
-  <script src="./js/tf4micro-motion-kit.js?cb=116"></script>  
+  <script src="./js/tf4micro-motion-kit.js?cb=117"></script>  
 
 
   <script type="text/javascript" nonce="3958daj3m">
@@ -72,7 +72,7 @@
       <div class="column right-side">
               <div class="getting-started">
                 <div class="text-block-4"><strong>Getting Started<br></strong>
-                  You need a <a href="https://tf4micro-motion-kit-dot-gweb-tf-micro-exp.uc.r.appspot.com/tf4micro-motion-kit-v005.zip" target="_blank">TF4Micro Motion Kit</a> pre-installed on Arduino. To confirm you're good to go, look for the red, green and blue flashing LED in the middle of the board. If you do not see this, visit <a href="https://github.com/googlecreativelab/tf4micro-motion-kit" target="_blank">Getting Started Guide</a>.<br>
+                  You need a <a href="https://github.com/googlecreativelab/tf4micro-motion-kit/releases/latest" target="_blank">TF4Micro Motion Kit</a> pre-installed on Arduino. To confirm you're good to go, look for the red, green and blue flashing LED in the middle of the board. If you do not see this, visit <a href="https://github.com/googlecreativelab/tf4micro-motion-kit" target="_blank">Getting Started Guide</a>.<br>
                 <br><br><strong>Connect via Bluetooth<br></strong>The TF4Micro motion kit communicates with this website via BLE so you can have a wireless experience. Quickly tap the button on your arduino then wait for the red, green and blue LED pattern to return. <i>Warning</i>: Do not hold the button down as this will clear the board. Click the &quot;connect&quot; button below, then select &quot;TF4Micro Motion Kit&quot; from the dialogue box. <br></div>
 
                 <div id="connectButtonContainer"> 
@@ -93,7 +93,7 @@
                
                   <div class="text-block-5 Play"><b>Play</b><br>Attach the board to the back of a finger <br>(close to the tip). <br>Make sure the LED is facing you and the USB connector is towards your wrist.<br><br>There are 5 gestures: <br>Swipe left, swipe right, twirl (do so quickly!), poke, and pluck (which changes the drum loop). <br>Check out the gifs for guidance. Have fun!<br></div>
       
-                  <div class="w-layout-grid grid"><img src="images/right.gif" loading="lazy" alt="twirl gesture" class="image-5"><img src="images/twirl.gif" loading="lazy" alt="twirl gesture" class="image-4"><img src="images/pluck.gif" loading="lazy" alt="pluck gesture" class="image-3"><img src="images/poke.gif" loading="lazy" alt="poke gesture" class="image-2"><img src="images/left.gif" loading="lazy" id="w-node-_337169d6-ed16-8524-514c-bdf18658fcf1-fe64dae6" alt="left gesture" class="image"></div>
+                  <div class="w-layout-grid grid"><img src="images/right.gif" loading="lazy" alt="right gesture" class="image-5"><img src="images/twirl.gif" loading="lazy" alt="twirl gesture" class="image-4"><img src="images/pluck.gif" loading="lazy" alt="pluck gesture" class="image-3"><img src="images/poke.gif" loading="lazy" alt="poke gesture" class="image-2"><img src="images/left.gif" loading="lazy" id="w-node-_337169d6-ed16-8524-514c-bdf18658fcf1-fe64dae6" alt="left gesture" class="image"></div>
                   
                   <button id="go_to_sketch" > Let's Go</button>
             </div> 
@@ -103,7 +103,7 @@
   </div>
 
   <div class='row' id="sketch-holder">
-      <script src="./js/sketch.js?cb=116"></script>
+      <script src="./js/sketch.js?cb=117"></script>
         <div class="side-gestures">
           <img  src="images/left.gif" loading="lazy" alt="left gesture" class="image-6">
           <img src="images/right.gif" loading="lazy" alt="right gesture" class="image-7">

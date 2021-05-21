@@ -185,7 +185,9 @@ function twirl_gesture() {
   ellipse(x + x / 2, y + y / 2, 200, 200);
   ellipse(x + x / 2, y - y / 2, 400, 400);
   pop();
+  
   twirl.play();
+  
 
   push();
   textSize(16);
@@ -296,6 +298,13 @@ function keyPressed() {
   }
 }
 
+/************************************************************************
+// SCRIPT FOR DISPLAY
+/************************************************************************/
+
+if(!!navigator.bluetooth){
+  document.body.classList.add('not-supported');
+}
 
 /************************************************************************
 // SCRIPT FOR BUTTONS

@@ -4,12 +4,17 @@
 /* General Structure */
 /******************************************************/
 
+.not-supported {
+
+  z-index: -100;
+  color:rgb(0, 0, 0);
+}
 .body {
   border: 1px solid transparent;
   border-radius: 20px;
   background-color: #000;
   font-family: Googlesansmono, sans-serif;
- 
+  
 }
 
 .column {
@@ -633,3 +638,4 @@ button {
   font-style: normal;
   font-display: swap;
 }
+

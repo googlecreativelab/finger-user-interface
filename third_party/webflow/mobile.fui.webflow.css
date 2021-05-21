@@ -1,0 +1,529 @@
+
+
+/******************************************************
+/* General Structure */
+/******************************************************/
+.not-supported {
+    visibility: visible;
+    color: #e4e4e4;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 80%;
+    z-index: 999; 
+}
+
+.body {
+    visibility: hidden;
+   
+  }
+  
+  .column {
+      visibility: hidden;
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .column {
+        visibility: hidden;
+  
+    }
+  }
+  
+  .row:after {
+    visibility: hidden;
+  }
+  
+  button { 
+    visibility: hidden;
+  }
+  
+   button:hover{
+    visibility: hidden;
+  }
+  
+  /******************************************************
+  /* Left Column Elements */
+  /******************************************************/
+  
+  .fui {
+    visibility: hidden; 
+  }
+  
+  /* FUI */
+  .text-block {
+    visibility: hidden;
+  }
+  
+  /* Finger User Interface */
+  .text-block-2 {
+    visibility: hidden;
+  }
+  
+  /* Tagline */
+  .text-block-3 {
+    visibility: hidden;
+  }
+  
+  .FUI-spacer  {
+    visibility: hidden;
+  }
+  
+  .info {
+    visibility: hidden;
+  }
+  
+  .a {
+    visibility: hidden;
+  }
+  
+  /******************************************************
+  /* Right Column Elements */
+  /******************************************************/
+  
+  /******************************************************/
+  /* Getting Started Section */
+  /******************************************************/
+  
+  
+  /* Getting Started Text */
+  .text-block-4 { 
+    visibility: hidden;
+  }
+  
+  .connectbutton {
+    visibility: hidden;
+  }
+  
+  .transferedbutton {
+    visibility: hidden;
+  }
+  
+  /* Progress Bar */
+  
+  #myProgress {
+    visibility: hidden;
+  }  
+  
+  #progress-text {
+    visibility: hidden;
+  }
+  
+  #myBar {
+    visibility: hidden;
+  }
+  
+  .connect-spacer {
+  /*  border: 1px solid white;*/
+  visibility: hidden;
+   
+  }
+  
+  /******************************************************/
+  /* Play Section */
+  /******************************************************/
+  
+  
+  /* Play Text */
+  .text-block-5 {
+    visibility: hidden;
+  }
+  
+  .play{
+    visibility: hidden;
+  
+  }
+  
+  .play-spacer {
+    visibility: hidden;
+  }
+  
+  /* Gesture GIFs */
+  
+  .w-layout-grid {
+    visibility: hidden;
+  }
+  
+  .grid {
+    visibility: hidden;
+  }
+  
+  
+  
+  .image {
+    visibility: hidden;
+  }
+  
+  .image-2 {
+    visibility: hidden;
+  }
+  
+  .image-3 {
+    visibility: hidden;
+  }
+  
+  .image-4 {
+    visibility: hidden;
+  }
+  
+  .image-5 {
+    visibility: hidden;
+  }
+  
+  .middle-part {
+    visibility: hidden;
+  }
+  
+  /******************************************************
+  /* Sketch */
+  /******************************************************/
+  
+  .loading {
+    visibility: hidden;
+  }
+  
+  .side-gestures {
+    visibility: hidden;
+  }
+  
+  
+  .image-6 {
+    visibility: hidden;
+  }
+  
+  .image-7 {
+    visibility: hidden;
+  }
+  
+  .image-8 {
+    visibility: hidden;
+  }
+  
+  .image-9 {
+    visibility: hidden;
+  }
+  
+  .image-10 {
+    visibility: hidden;
+  }
+  
+  .italic-text {
+    visibility: hidden;
+  }
+  
+  
+  /******************************************************
+  /* Fonts */
+  /******************************************************/
+  
+  
+  
+  #w-node-_337169d6-ed16-8524-514c-bdf18658fcf1-fe64dae6 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: Area;
+  }
+  
+  @font-face {
+    font-family: 'Googlesansmono';
+    src: url('../../fonts/GoogleSansMono-Medium-2.ttf') format('truetype');
+    /* src: url('../../fonts/GoogleSansMono-Medium-2.ttf') format('truetype'); */
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono[wght] 2';
+    src: url('../../fonts/GoogleSansMonowght-2.ttf') format('truetype'), url('../../fonts/GoogleSansMonowght-2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono';
+    src: url('../../fonts/GoogleSansMono-Italic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Italicwght.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Italic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Italicwght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono';
+    src: url('../../fonts/GoogleSansMono-Regular.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono';
+    src: url('../../fonts/GoogleSansMono-MediumItalic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono';
+    src: url('../../fonts/GoogleSansMono-Bold.ttf') format('truetype'), url('../../fonts/GoogleSansMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono';
+    src: url('../../fonts/GoogleSansMono-BoldItalic.ttf') format('truetype'), url('../../fonts/GoogleSansMono-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Googlesansmono 2';
+    src: url('../../fonts/GoogleSansMono-Medium-2.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inknutantiqua';
+    src: url('../../fonts/InknutAntiqua-ExtraBold.ttf') format('truetype'), url('../../fonts/InknutAntiqua-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inknutantiqua';
+    src: url('../../fonts/InknutAntiqua-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inknutantiqua';
+    src: url('../../fonts/InknutAntiqua-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inknutantiqua';
+    src: url('../../fonts/InknutAntiqua-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inknutantiqua';
+    src: url('../../fonts/InknutAntiqua-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inknutantiqua';
+    src: url('../../fonts/InknutAntiqua-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Archivonarrow';
+    src: url('../../fonts/ArchivoNarrow-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono variablefont wght';
+    src: url('../../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono';
+    src: url('../../fonts/RobotoMono-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Robotomono variablefont wght';
+    src: url('../../fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('../../fonts/Syne-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('../../fonts/Syne-Bold.ttf') format('truetype'), url('../../fonts/Syne-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('../../fonts/Syne-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne variablefont wght';
+    src: url('../../fonts/Syne-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Syne';
+    src: url('../../fonts/Syne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }

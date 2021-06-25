@@ -1,0 +1,12 @@
+.DS_Store
+*.pyc
+.idea
+.pytest_cache
+env/
+.coverage
+htmlcov
+env/
+__pycache__/
+*.egg-info/
+node_modules/
+/public/build/

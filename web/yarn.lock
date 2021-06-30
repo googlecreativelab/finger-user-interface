@@ -1847,7 +1847,7 @@ terser@^5.0.0:
 
 "tf4micro-motion-kit@https://github.com/googlecreativelab/tf4micro-motion-kit":
   version "0.0.0"
-  resolved "https://github.com/googlecreativelab/tf4micro-motion-kit#10b8181a264eddddc6dbcbc8620eb7e64ccf0859"
+  resolved "https://github.com/googlecreativelab/tf4micro-motion-kit#0c85353c04e7c430444144668f7894b3b12d25a6"
 
 tinydate@^1.0.0:
   version "1.3.0"
